@@ -2,7 +2,7 @@
 using namespace std;
 main ()
 { string uname,pass;
-  int nilai,harian,uts,uas,pilih;
+  float nilai,harian,uts,uas,pilih;
   
   cout<<"======Login Akun======"<<endl;
   cout<<"Username	: ";cin>>uname;
