@@ -36,9 +36,9 @@ int main()
 					y = y + (tinggi-x);
 					x++;
 				}
-				cout <<"\n";
+					cout <<"\n";
 				}
-				break;
+					break;
 				}
 		return 0;
 }
