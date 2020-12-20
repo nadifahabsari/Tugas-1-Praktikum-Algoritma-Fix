@@ -39,7 +39,7 @@ char lagi;
 void Luas() {
 	int jarijari;
 	float luas;
-	cout <<"Jari - jari\t: "; cin >> jarijari;
+	cout <<"Jari - jari\t: "; cin >>jarijari;
 	
 	luas=phi*jarijari*jarijari;
 	
@@ -48,7 +48,7 @@ void Luas() {
 
 int Keliling(int jarijari) {
 	float keliling;
-	cout <<"Jari - jari\t: "; cin >> jarijari;
+	cout <<"Jari - jari\t: "; cin >>jarijari;
 	
 	keliling=2*phi*jarijari;
 	
@@ -59,8 +59,8 @@ int Keliling(int jarijari) {
 void Volume(int jarijari) {
 	int tinggi;
 	float volume;
-	cout <<"Jari - jari\t: "; cin >> jarijari;
-	cout <<"Tinggi\t\t: "; cin >> tinggi;
+	cout <<"Jari - jari\t: "; cin >>jarijari;
+	cout <<"Tinggi\t\t: "; cin >>tinggi;
 	
 	volume=phi*jarijari*jarijari*tinggi;
 	
