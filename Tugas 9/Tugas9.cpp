@@ -2,39 +2,27 @@
 using namespace std;
 int main (){
  int i, n;
- int tertinggi, terendah, selisihmax;
- float rata, jumlah;
+ int angka[n], selisih[n];
+ int tertinggi=-100, terendah=100, selisihmax=0;
+ float rata, jumlah=0;
 
 	cout<<"Masukkan banyak angka = ";
 	cin>>n;
-	
-	int angka[n], selisih[n];
-	for(i=0; i<n; i++){
+	for(int i=0; i<n; i++){
 	cout<<"Angka ke-"<<i+1<<" = ";
 	cin>>angka[i];
-	jumlah=jumlah+angka[i];
- }
-		for(i=0; i<n-1; i++){
-        selisih[i]=angka[i+1]-angka[i];
-        if(selisih[i]<0){
-            selisih[i]=-selisih[i];
-        }
-		}
-			
- terendah=angka[0];
- tertinggi=angka[0];
- selisihmax=angka[0];
- rata=jumlah/n;
-  for(i=0; i<n; i++) {
+	jumlah+=angka[i];
+
 		if (angka[i]>tertinggi) {
 			tertinggi=angka[i];
-		} else if (angka[i]<terendah) {
+		}
+		
+		if (angka[i]<terendah) {
 			terendah=angka[i];
-		} else {
-	}
-	}
-	for(i=0; i<n; i++){
-		if(angka[i]<angka[i-1]){
+		}
+		
+		if (i>0){
+		if (angka[i]<angka[i-1]){
 		selisih[i]=angka[i-1]-angka[i];
 		}
 		else {selisih[i]=angka[i]-angka[i-1];
@@ -43,9 +31,8 @@ int main (){
 			selisihmax=selisih[i];
 		}
 		}
-	cout <<endl;
-	cout <<endl;
-	
+}
+ rata=jumlah/n;
  cout<<"_____Hasil_____"<<endl;
  cout<<"Deret		: ";
  for(i = 0; i<n; i++) {
@@ -58,3 +45,4 @@ int main (){
  cout<<"Selisih Max	: "<<selisihmax<<endl;
  return 0;
 } 
+
